@@ -10,10 +10,15 @@ body {
   margin: 0;
 }
 
+/* menyembunyikan scroll bar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .wrapper {
-  /* border: 1px solid black; */
+  /* border: 1px solid; */
   max-width: 1024px;
-  padding: 80px 30px 30px 30px;
+  padding: 60px 30px 30px 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,7 +34,7 @@ header .logo {
 }
 
 header .logo-text {
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -37,7 +42,7 @@ header .logo-text {
 }
 
 nav.menu {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -53,8 +58,13 @@ nav.menu a {
 }
 
 nav.menu a:hover {
+  color: #4b6cc1;
   transition: transform 0.3s ease;
   transform: scale(1.05);
+}
+
+nav.menu a:focus {
+  color: #4b6cc1;
 }
 
 header img {
@@ -62,3 +72,33 @@ header img {
   height: 100px;
   border-radius: 50%;
 }
+
+/* Awal Section */
+.box {
+  background-color: #f1f8fa;
+  padding: 1.8rem;
+  border-radius: 5px;
+  margin-top: 3rem;
+}
+
+.box .text-box h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.box .text-box p {
+  line-height: 35px;
+  font-size: 22px;
+  font-weight: 200;
+  text-align: justify;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.box .text-box p a {
+  text-decoration: none;
+}
+.box .text-box p a:hover {
+  text-decoration: underline;
+}
+/* Akhir Section */
